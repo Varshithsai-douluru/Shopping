@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="9oct.css">
+<title>My Shopping</title>
+<style>
+    *{
+margin: 0;
+padding: 0;
+/* padding-left: 0px; */
+}
+.main{
+width: 100%;
+background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,7)100%),url(/back\ 1.jpg);
+background-position: centre;
+background-size: cover;
+height:109vh;
+}
+.navbar{
+width: 1300px;
+height: 75px;
+margin: auto;
+}
+.log{
+width: 200px;
+float: left;
+height: 70px;
+}
+.hello{
+color:white;
+font-size: 45px;
+font-family: italic;
+font-weight: 300;
+padding-top: 30px;
+/* padding-left: 20px; */
+float: left;
+}
+.menu{
+width: 500px;
+float: left;
+height: 70px;
+/* color: yellow; */
+}
+ul{
+float: left;
+display: flex;
+justify-content:center ;
+align-items: center;
+}
+ul li{
+color:black;
+margin-top: 40px;
+margin-left: 40px;
+font-size: x-large;
+list-style: none;
+word-spacing: 300px;
+}
+ul li a{
+text-decoration: none;
+color: rgb(8, 248, 24);
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+transition: 0.4s ease-in-out;
+/* word-spacing: 1000px; */
+}
+ul li a.hover{
+color: chartreuse;
+}
+.search{
+width: 330px;
+float: right;
+margin-left: 170px;
+padding-top: 40px;
+}
+.srch{
+font-family: 'Times New Roman';
+width: 200px;
+height: 40px;
+/* padding-top: 0px; */
+background: transparent;
+border: 1px solid #ff7200;
+/* margin-top: 13px; */
+color: #fff;
+border-right: none;
+font-size: 16px;
+float: left;
+padding: 05px;
+border-bottom-left-radius: 5px;
+border-top-right-radius: 5px;
+/* margin-right: 40px; */
+}
+.btn{
+width: 100px;
+height: 40px;
+background: #ff7200;
+border: 2px solid #ff7200;
+/* margin: 13px; */
+color: #fff;
+font-size: 15px;
+border-bottom-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.btn:focus{
+outline: none;
+}
+.srch:focus{
+outline: none;
+}
+.content{
+width: 1400px;
+height: auto;
+margin: auto;
+color: rgb(7, 255, 94);
+position: relative;
+padding-top: 50px;
+}
+.content .par{
+padding-left: 20px;
+padding-bottom: 25px;
+font-family: Arial;
+letter-spacing: 1.2px;
+line-height: 30px;
+padding-left:30px;
+}
+content .paa{
+padding-left: 20px;
+padding-bottom: 25px;
+font-family: Arial;
+letter-spacing: 1.2px;
+line-height: 30px;
+padding-left:170px;
+}
+.content .paaa{
+padding-left: 20px;
+padding-bottom: 25px;
+font-family: Arial;
+letter-spacing: 1.2px;
+line-height: 30px;
+padding-left:475px;
+right: ;
+}
+.content .paaaa{
+padding-left: 20px;
+padding-bottom: 25px;
+font-family: Arial;
+letter-spacing: 1.2px;
+line-height: 30px;
+padding-left:750px;
+}
+content .paaaaa{
+padding-left: 20px;
+padding-bottom: 25px;
+
+letter-spacing: 1.2px;
+line-height: 30px;
+padding-left:1000px;
+}
+.content h1{
+font-family:sans-serif;
+font-size: 40px;
+padding-left: 20px;
+}
+.content.cn{
+width: 160px;
+height: 40px;
+background: red;
+border: none;
+/* margin-bottom: 10px; */
+/* margin-left: 20px; */
+font-size: 20px;
+border-radius: 10px;
+cursor: pointer;
+/* margin-left: 30px; */
+/* padding-left: 400px; */
+}
+.content .cn a{
+text-decoration: none;
+color:red;
+transition:.3s ease;
+margin-left: 20px;
+background: transparent;
+}
+/* .cn:hover{ */
+/* background-color: white; */
+/* } */
+.form{
+width: 250px;
+height: 250px;
+background: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+position: absolute;
+top: 50px;
+left: 1005px;
+border-radius: 10px;
+padding: 25px;
+margin-bottom: 40px;
+}
+.form h2{
+width: 220px;
+font-family: sans-serif;
+text-align: center;
+color: rgb(5, 44, 44);
+font-family: 22px;
+background-color: blue;
+border-radius: 10px;
+margin: 2px;
+padding: 8px;
+}
+.form input{
+width: 240px;
+height: 35px;
+background: transparent;
+border-bottom: 1px solid blue;
+border-top: none;
+border-left: none;
+color: white;
+font-size: 15px;
+letter-spacing: 1px;
+margin-top: 30px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+::placeholder{
+color: white;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+Verdana, sans-serif;
+}
+.form input:focus{outline: none;
+}
+.btnn{
+width: 240px;
+height: 40px;
+background: blue;
+border: none;
+margin-top: 30px;
+font-size: 18px;
+border-radius: 10px;
+cursor: pointer;
+color: white;
+}
+.btnn a{
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+.btnn:hover{
+background: white;
+color: blue;
+}
+.form .link{
+font-family: Arial, Helvetica, sans
+font-size: 17px;
+padding-top: 20px;
+text-align: centre;
+}
+.form .link a{
+text-decoration: none;
+color: blue;
+}
+.liw{
+padding-top: 15px;
+padding-bottom: 10px;
+text-align: center;
+}
+.icons a{
+text-decoration: none;
+color: white;
+}
+.icons{
+color: blue;
+font-size: 30px;
+padding-left: 14px;
+padding-top: 5px;
+transition: 0.3s ease;
+word-spacing: 10px;
+}
+.icons ion-icons:hover{
+    color: white;
+}
+body{
+            background: url(c03-e80f-4ca7-b0ce-32db3ab75995.webp) no-repeat;
+            background-size: cover;
+        }
+</style>
+</head>
+<body>
+<div class="main">
+<div class="navbar">
+<div class="log">
+<h2 class="hello">MY SHOPPING</h2><br>
+</div>
+
+<div class="menu">
+<ul>
+<li><a href="MEN.html">Men</a></li>
+<li><a href="women.html">Women</a></li>
+<li><a href="children.html">Children</a></li>
+<li><a href="electronic.html">Electronic</a></li>
+<li><a href="glossary.html">Glossary</a></li>
+</ul>
+</div>
+<div class="search">
+<input class="srch" type="search" name="search" placeholder="Search">
+<button class="btn">search</button>
+</div>
+</div>
+<div class="content">
+<h1><br><br><span>DIWAIL AND CHRISTMAS</span><br>offers upto 60% </h1> <br>
+<H1><center>GREAT INDIAN SALE</center></H1>
+<p class="par">"Add to cart, add to heart! ” <br>
+    “Click, ship, chic! ” <br></p>
+    <p class="paa">"Shop the world, right from your screen!"<br>
+    “ Your dream wardrobe, one click away."<br></p >
+    <p class="paaa">"Bringing the mall to your fingertips." <br>
+        "Why wait in line when you can shop online?" <br></p>
+    <p class="paaaa">"Discover more, spend less!" <br>
+        "Find what you love. Love what you find."</p>
+    <p class="paaaaa">
+        "Shopping made easy, fashion made affordable."<br>
+        "From your wishlist to your doorstep!"</p> <br> <br>
+    <!-- <p class="paaaaaa"> “Jingle bells, jingle sales! ” <br>
+    “Festive finds for all! ”</p> -->
+    <!-- <button class="cn"><a href="#"> hello</a></button> -->
+    <div class="form">
+    
+    <h2>login here</h2>
+    <input type="username" name="username" placeholder="Enter your name">
+    <input type="password" name="password " placeholder=" Password">
+    <button class="btnn"><a href="#">login </a></button>
+    <p class="link">Do not have account</p>
+    <a href="3">Sign up</a>
+<p class="liw"> log in with</p>
+<div class="icons">
+<a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+<a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+<a href="https://x.com/login?mx=2"><ion-icon name="logo-twitter"></ion-icon></a>
+<a href="https://myaccount.google.com/"><ion-icon name="logo-google"></ion-icon></a>
+<a href="https://web.snapchat.com/"><ion-icon name="logo-Snapchat"></ion-icon></a>
+</div>
+</div>
+</div>
+</div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+<p class="nar">THANK YOU FOR VISITING MY WEBSITE
+
+</p>
+</div>
+</body>
+</html
